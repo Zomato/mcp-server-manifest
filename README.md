@@ -1,18 +1,18 @@
 # Zomato MCP Server
 
-An mcp server to expose Zomato functionalities.
+An mcp server for your food ordering needs.
 
 ## Supported Features
 
-- 🔎 Restaurant Discovery
-- 📒 Menu Browsing
-- 🛒 Cart Creation
-- 🥗 Food Ordering
-- 💳 QR code payment
+- 🔎 **Restaurant Discovery** - Find nearby restaurants based on your location and preferences.
+- 📒 **Menu Browsing** - Browse through detailed menus with prices, descriptions, and ratings.
+- 🛒 **Cart Creation** - Add items to your cart and customize orders with ease.
+- 🥗 **Food Ordering** - Place orders seamlessly with order tracking support.
+- 💳 **QR code payment** - Complete secure payments using QR code integration.
 
 ## Installation Guide
 
-#### Install in VsCode
+### Install in VsCode
 
 <b>One Click Installation</b>
 
@@ -33,17 +33,17 @@ Add this to your `mcp.json` file.
 }
 ```
 
-#### Install in Claude Desktop
+### Install in Claude Desktop
 
 1. Make sure Node.js is installed
 
-In your terminal, check if Node.js is installed on your system by running:
+    In your terminal, check if Node.js is installed on your system by running:
 
-```bash
-node -v
-```
+    ```bash
+    node -v
+    ```
 
-If Node.js isn't installed, download it from [nodejs.org](https://nodejs.org/en).
+    If Node.js isn't installed, download it from [nodejs.org](https://nodejs.org/en).
 
 2. Configure Claude Desktop
 
@@ -54,17 +54,17 @@ If Node.js isn't installed, download it from [nodejs.org](https://nodejs.org/en)
 - Save the file to apply the configuration
 - Restart Claude Desktop
 
-<b>Configuration:</b>
-```json
-{
-  "mcpServers": {
-    "zomato-mcp": {
-      "command": "npx",
-      "args": [
-        "mcp-remote",
-        "https://mcp-server.zomato.com/mcp"
-      ]
+  <b>Configuration:</b>
+  ```json
+  {
+    "mcpServers": {
+      "zomato-mcp": {
+        "command": "npx",
+        "args": [
+          "mcp-remote",
+          "https://mcp-server.zomato.com/mcp"
+        ]
+      }
     }
   }
-}
-```
+  ```
