@@ -12,6 +12,10 @@ An mcp server for your food ordering needs.
 
 ## Installation Guide
 
+> ⚠️ **OAuth Redirect URI Warning**: Currently, we have only whitelisted the following redirect URIs for OAuth authentication. Please reach out to us to enable your client:
+> - `localhost`
+> - `chatgpt.com`
+
 ### Install in VsCode
 
 <b>One Click Installation</b>
