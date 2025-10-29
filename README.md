@@ -2,6 +2,8 @@
 
 An mcp server for your food ordering needs.
 
+Disclaimer : This is only for testing purposes and Zomato disclaims any and all liabilities that may arise due to erroneous / non-functionality of the MCP integration.
+
 ## Supported Features
 
 - 🔎 **Restaurant Discovery** - Find nearby restaurants based on your location and preferences.
