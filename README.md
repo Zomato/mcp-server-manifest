@@ -13,8 +13,14 @@ An mcp server for your food ordering needs.
 ## Installation Guide
 
 > ⚠️ **OAuth Redirect URI Warning**: Currently, we have only whitelisted the following redirect URIs for OAuth authentication. Please reach out to us to enable your client:
-> - `localhost`
-> - `chatgpt.com`
+> - `claude://claude.ai/settings/connectors`
+> - `https://chatgpt.com/connector_platform_oauth_redirect`
+> - `http://localhost`
+> - `http://127.0.0.1`
+> - `https://claude.ai/api/mcp/auth_callback`
+> - `https://insiders.vscode.dev/redirect`
+> - `https://oauth.pstmn.io/v1/callback`
+> - `https://vscode.dev/redirect`
 
 ### Install in VsCode
 
