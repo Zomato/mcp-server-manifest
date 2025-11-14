@@ -17,8 +17,6 @@ Disclaimer : This is only for testing purposes and Zomato disclaims any and all 
 > ⚠️ **OAuth Redirect URI Warning**: Currently, we have only whitelisted the following redirect URIs for OAuth authentication. Please reach out to us to enable your client:
 > - `claude://claude.ai/settings/connectors`
 > - `https://chatgpt.com/connector_platform_oauth_redirect`
-> - `http://localhost`
-> - `http://127.0.0.1`
 > - `https://claude.ai/api/mcp/auth_callback`
 > - `https://insiders.vscode.dev/redirect`
 > - `https://oauth.pstmn.io/v1/callback`
@@ -45,38 +43,5 @@ Add this to your `mcp.json` file.
 }
 ```
 
-### Install in Claude Desktop
-
-1. Make sure Node.js is installed
-
-    In your terminal, check if Node.js is installed on your system by running:
-
-    ```bash
-    node -v
-    ```
-
-    If Node.js isn't installed, download it from [nodejs.org](https://nodejs.org/en).
-
-2. Configure Claude Desktop
-
-- Go to Settings > Developer
-- Click Edit config to open the claude_desktop_config.json file
-- Add the MCP server configuration to the mcpServers section
-- Paste the configuration below
-- Save the file to apply the configuration
-- Restart Claude Desktop
-
-  <b>Configuration:</b>
-  ```json
-  {
-    "mcpServers": {
-      "zomato-mcp": {
-        "command": "npx",
-        "args": [
-          "mcp-remote",
-          "https://mcp-server.zomato.com/mcp"
-        ]
-      }
-    }
-  }
-  ```
+<b>Disclaimer</b>
+We are not allowing any third party apps to be built right now due to security and legal consideration, please watch out the space due to this
