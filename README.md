@@ -26,7 +26,7 @@ Disclaimer : This is only for testing purposes and Zomato disclaims any and all 
 
 <b>One Click Installation</b>
 
-[<img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="Click to install" height="32" />](https://insiders.vscode.dev/redirect?url=vscode:mcp/install?%7B%22type%22%3A%22http%22%2C%22name%22%3A%22zomato-mcp%22%2C%22version%22%3A%220.0.1%22%2C%22description%22%3A%22MCP%20server%20to%20interact%20with%20Zomato%20services%22%2C%22url%22%3A%22https%3A%2F%2Fmcp-server.zomato.com%2Fmcp%22%2C%22author%22%3A%22Zomato%22%2C%22tags%22%3A%5B%22zomato-mcp%22%2C%22mcp%22%2C%22server%22%5D%2C%22categories%22%3A%5B%22mcp%22%5D%7D)
+[<img src="https://code.visualstudio.com/assets/apple-touch-icon.png" alt="Install in VS Code" height="32" />](https://insiders.vscode.dev/redirect?url=vscode:mcp/install?%7B%22type%22%3A%22http%22%2C%22name%22%3A%22zomato-mcp%22%2C%22version%22%3A%220.0.1%22%2C%22description%22%3A%22MCP%20server%20to%20interact%20with%20Zomato%20services%22%2C%22url%22%3A%22https%3A%2F%2Fmcp-server.zomato.com%2Fmcp%22%2C%22author%22%3A%22Zomato%22%2C%22tags%22%3A%5B%22zomato-mcp%22%2C%22mcp%22%2C%22server%22%5D%2C%22categories%22%3A%5B%22mcp%22%5D%7D)
 
 <b>Manual Installation</b>
 
