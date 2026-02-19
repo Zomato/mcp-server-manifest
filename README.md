@@ -2,8 +2,6 @@
 
 An mcp server for your food ordering needs.
 
-Disclaimer : This is only for testing purposes and Zomato disclaims any and all liabilities that may arise due to erroneous / non-functionality of the MCP integration.
-
 ## Supported Features
 
 - 🔎 **Restaurant Discovery** - Find nearby restaurants based on your location and preferences.
@@ -26,7 +24,7 @@ Disclaimer : This is only for testing purposes and Zomato disclaims any and all 
 
 <b>One Click Installation</b>
 
-[<img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="Click to install" height="32" />](https://insiders.vscode.dev/redirect?url=vscode:mcp/install?%7B%22type%22%3A%22http%22%2C%22name%22%3A%22zomato-mcp%22%2C%22version%22%3A%220.0.1%22%2C%22description%22%3A%22MCP%20server%20to%20interact%20with%20Zomato%20services%22%2C%22url%22%3A%22https%3A%2F%2Fmcp-server.zomato.com%2Fmcp%22%2C%22author%22%3A%22Zomato%22%2C%22tags%22%3A%5B%22zomato-mcp%22%2C%22mcp%22%2C%22server%22%5D%2C%22categories%22%3A%5B%22mcp%22%5D%7D)
+[![Install MCP](https://img.shields.io/badge/Install-ZomatoMCP-E23744)](https://insiders.vscode.dev/redirect?url=vscode:mcp/install?%7B%22type%22%3A%22http%22%2C%22name%22%3A%22zomato-mcp%22%2C%22version%22%3A%220.0.1%22%2C%22description%22%3A%22MCP%20server%20to%20interact%20with%20Zomato%20services%22%2C%22url%22%3A%22https%3A%2F%2Fmcp-server.zomato.com%2Fmcp%22%2C%22author%22%3A%22Zomato%22%2C%22tags%22%3A%5B%22zomato-mcp%22%2C%22mcp%22%2C%22server%22%5D%2C%22categories%22%3A%5B%22mcp%22%5D%7D)
 
 <b>Manual Installation</b>
 
@@ -43,5 +41,48 @@ Add this to your `mcp.json` file.
 }
 ```
 
-<b>Disclaimer</b>
-We are not allowing any third party apps to be built right now due to security and legal consideration, please watch out the space due to this
+### Install on Claude
+
+<b> Using Connectors (Requires claude subscription) </b>
+1. Open Claude
+2. Go to Settings -> Connectors -> Add custom connector
+3. Use the URL: `https://mcp-server.zomato.com/mcp`
+4. Save and Restart Claude
+
+
+<b> Using Manual Configuration (Available on free plan) </b>
+1. Open Claude
+2. Go to Settings -> Developer -> Edit Config
+3. Open `claude_desktop_config.json` in a text editor.
+4. Add the following configuration:
+	```json
+	{
+		"mcpServers": {
+			"zomato-mcp": {
+			"command": "npx",
+				"args": [
+					"mcp-remote",
+					"https://mcp-server.zomato.com/mcp"
+				]
+			}
+		}
+	}
+	```
+
+## Example Prompts
+
+Get started with these example prompts to explore what the Zomato MCP server can do:
+
+- "Show me the best rated restaurants near me"
+- "Find pizza places within 3km"
+- "Show me vegan restaurants in my area"
+- "Add 2 margherita pizzas from dominoz to my cart"
+- "Order my usual coffee"
+- "Reorder from my last order"
+- "Order butter chicken with naan from a nearby restaurant"
+
+
+## Disclaimer
+- We are not allowing any third party apps to be built on top of Zomato MCP right now due to security and legal considerations. Please reach out to us for any integration discussions.
+
+- This is only for testing purposes and Zomato disclaims any and all liabilities that may arise due to erroneous / non-functionality of the MCP integration.
