@@ -10,6 +10,9 @@ An mcp server for your food ordering needs.
 - 🥗 **Food Ordering** - Place orders seamlessly with order tracking support.
 - 💳 **QR code payment** - Complete secure payments using QR code integration.
 
+## MCP Developer Access
+Your space to build AI agents, integrations, and personal-use apps on top of Zomato MCP. To request access (for personal use only), fill out the [form](https://forms.eternal.com/form/ja8hap2tpm), and we'll review your request.
+
 ## Installation Guide
 
 > ⚠️ **OAuth Redirect URI Warning**: Currently, we have only whitelisted the following redirect URIs for OAuth authentication. Please reach out to us to enable your client:
